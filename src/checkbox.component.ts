@@ -34,7 +34,6 @@ import { Component, Input, Output, ElementRef, Renderer, OnInit, EventEmitter } 
             box-shadow: 0 0 10px rgba(179, 97, 4, 0.4) inset;
         }
         .sks-checkbox + span {
-            cursor: pointer;
             display: inline-block;
             width: calc(100% - 35px);
             width: -webkit-cacl(100% - 35px);

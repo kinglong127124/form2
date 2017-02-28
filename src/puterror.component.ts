@@ -25,24 +25,29 @@ import { Component, Input, Renderer } from '@angular/core';
     </table>
     `,
     styles: [`
-    :host{
-        display: inline-block;
-        white-space: nowrap;
+    
+    :host {
         width: 100%;
-        position: initial;
+        white-space: nowrap;
+        display: inline-block;
+        position: absolute;
         padding: 0;
-        height: 32px;
-        margin-top: 8px;
+        height:32px; 
+        margin-top: 0px;
+        margin-left: -15px;
+        z-index: 9999;
     }
-    @media (min-width: 768px){
-        :host {
-            width: 100%;
-            white-space: nowrap;
+    @media (max-width: 990px){
+        :host{
             display: inline-block;
+            white-space: nowrap;
+            width: 100%;
             position: absolute;
             padding: 0;
-            height:32px; 
-            margin-top: 0px;
+            height: 32px;
+            margin-left: -15px;
+            margin-top: 8px;
+            z-index: 9999;
         }
     }
     :host .error-tab {
@@ -50,43 +55,44 @@ import { Component, Input, Renderer } from '@angular/core';
         width: 100%;
         display: inline-block;
         border-radius: 3px; }
+        
         :host .error-tab .tran {
             width: 10px;
             height: 10px;
             background: #feeed4;
-            left: 25px;
-            top: -16px;
-            transform: rotate(135deg);
-            -ms-transform: rotate(135deg);
-            -moz-transform: rotate(135deg);
-            -webkit-transform: rotate(135deg);
-            -o-transform: rotate(135deg);
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            /* IE 9 */
+            -moz-transform: rotate(45deg);
+            /* Firefox */
+            -webkit-transform: rotate(45deg);
+            /* Safari 和 Chrome */
+            -o-transform: rotate(45deg);
+            /* Opera */
             border: 1px solid #d09842;
             border-right: none;
             border-top: none;
             position: relative;
-         }
+            left: 5px;
+            top: 0px;
+        }
         
-        @media (min-width: 768px){
+        @media (max-width: 990px){
             :host .error-tab .tran {
                 width: 10px;
                 height: 10px;
                 background: #feeed4;
-                transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                /* IE 9 */
-                -moz-transform: rotate(45deg);
-                /* Firefox */
-                -webkit-transform: rotate(45deg);
-                /* Safari 和 Chrome */
-                -o-transform: rotate(45deg);
-                /* Opera */
+                left: 25px;
+                top: -16px;
+                transform: rotate(135deg);
+                -ms-transform: rotate(135deg);
+                -moz-transform: rotate(135deg);
+                -webkit-transform: rotate(135deg);
+                -o-transform: rotate(135deg);
                 border: 1px solid #d09842;
                 border-right: none;
                 border-top: none;
                 position: relative;
-                left: 5px;
-                top: 0px;
             }
         }
 
