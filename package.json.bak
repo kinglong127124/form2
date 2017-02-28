@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kinglong127124/form2.git"
+    "url": "https://github.com/kinglong127124/kl-xjys.git"
   },
   "keywords": [
     "angular",
     "ism",
     "form2"
   ],
-  "author": "king",
+  "author": "skspruce",
   "license": "MIT",
   "bugs": {
     "url": "http://192.168.40.228:3000/issues"
